@@ -1,7 +1,10 @@
 # Rootless K3S
-Setup rootless Kubernetes cluster using [K3S](https://k3s.io/).
+Setup a rootless Kubernetes cluster using [K3S](https://k3s.io/).
 
 ## Setup
+
+For some setup steps, root privileges are still needed. 
+However, in the end, Kubernetes will run only with user privileges.
 
 Execute following as non-root user:
 
