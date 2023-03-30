@@ -32,6 +32,11 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=${INSTALL_K3S_VERSION} INSTAL
 - Do not use `su <user>` or `sudo -u <user>` to execute setup commands as non-root user - instead use `ssh <user>@localhost`
 
 ## Troubleshooting
+Run to check if cluster is up and running:
+```shell
+KUBECONFIG=~/.kube/k3s.yaml kubectl get pods -A
+```
+
 Run to check the daemon status:
 ```shell
 systemctl --user status k3s-rootless
