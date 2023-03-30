@@ -1,5 +1,7 @@
 # Rootless K3S
-Setup a rootless Kubernetes cluster using [K3S](https://k3s.io/).
+Set up a rootless Kubernetes cluster using [K3S](https://k3s.io/).
+
+This setup uses Containerd as container runtime.
 
 ## Setup
 
