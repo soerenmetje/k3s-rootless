@@ -52,3 +52,4 @@ journalctl --user -xu k3s-rootless
 ## Sources
 - https://docs.k3s.io/advanced#running-rootless-servers-experimental
 - https://docs.k3s.io/advanced#starting-the-service-with-the-installation-script
+- https://rootlesscontaine.rs/getting-started/common/cgroup2/
