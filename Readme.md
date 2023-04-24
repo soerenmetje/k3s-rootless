@@ -21,7 +21,11 @@ export INSTALL_K3S_VERSION=v1.25.7+k3s1
 
 # Get K3S binaries
 # disabling auto-starting and service enablement with the install script
-curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=${INSTALL_K3S_VERSION} INSTALL_K3S_SKIP_START=true INSTALL_K3S_SKIP_ENABLE=true sh -
+
+cat ./get-k3s-2023-04-24.sh | INSTALL_K3S_VERSION=${INSTALL_K3S_VERSION} INSTALL_K3S_SKIP_START=true INSTALL_K3S_SKIP_ENABLE=true sh -
+# Alternative: use latest k3s setup
+# curl -sfL https://get.k3s.io | INSTALL_K3S_VERSION=${INSTALL_K3S_VERSION} INSTALL_K3S_SKIP_START=true INSTALL_K3S_SKIP_ENABLE=true sh -
+
 
 # Setup and start rootless
 /bin/bash ./setup-rootless.sh
