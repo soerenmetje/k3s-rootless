@@ -8,9 +8,10 @@ This setup uses Containerd as container runtime.
 For some setup steps, root privileges are still needed. 
 However, in the end, Kubernetes will run only with user privileges.
 
-Execute following as non-root user:
+Execute following as non-root user (use `ssh <user>@localhost` - not `su` or `sudo -u`):
 
 ```shell
+
 # Configure cgroup v2, cgroup delegation, etc
 sudo /bin/bash ./setup-preparation.sh
 
